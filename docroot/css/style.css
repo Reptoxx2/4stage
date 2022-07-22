@@ -301,6 +301,10 @@ body .content__form-block2 span {
 body .content__form-block2 p {
   color: #bababa;
 }
+body .content__row-1 {
+  display: flex;
+  flex-direction: column;
+}
 body .content__row-1 h3 {
   font-size: 25px;
   text-align: center;
@@ -565,11 +569,14 @@ body .comment p:last-child {
   margin-bottom: 113px;
 }
 body .navigator {
+  display: flex;
   margin-top: 30px;
   margin-bottom: 30px;
   align-self: center;
-  display: flex;
   gap: 5px;
+}
+body .navigator__course {
+  display: none;
 }
 body .navigator span {
   width: 10px;
@@ -776,6 +783,9 @@ body .navigator span.active {
   }
   body .course-item span {
     text-align: center;
+  }
+  body .navigator__course {
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */

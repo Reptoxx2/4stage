@@ -8,6 +8,7 @@ let mentors = document.querySelector('.content__mentor-list').children;
 let list = document.querySelector('.content__course-itemrow').children;
 let comment_nav = document.querySelector('.navigator__comments').children;
 let mentors_nav = document.querySelector('.navigator__mentors').children;
+let course = document.querySelector('.navigator__course').children;
 let i = 0;
 
 
@@ -20,12 +21,14 @@ let i = 0;
       mentors[i].classList.remove('active');
       comment_nav[i].classList.remove('active');
       mentors_nav[i].classList.remove('active');
+      course[i].classList.remove('active');
       i = 0;
       list[i].classList.add('active');
       comments[i].classList.add('active');
       mentors[i].classList.add('active');
       comment_nav[i].classList.add('active');
       mentors_nav[i].classList.add('active');
+      course[i].classList.add('active');
     }
     else if (comments[i].classList.contains('active') || mentors[i].classList.contains('active') || list[i].classList.contains('active')){
       list[i].classList.remove('active');
@@ -33,12 +36,14 @@ let i = 0;
       mentors[i].classList.remove('active');
       comments[i].classList.remove('active');
       mentors_nav[i].classList.remove('active');
+      course[i].classList.remove('active');
       i++;
       list[i].classList.add('active');
       comment_nav[i].classList.add('active');
       comments[i].classList.add('active');
       mentors[i].classList.add('active');
       mentors_nav[i].classList.add('active');
+      course[i].classList.add('active');
 
     }
   },10000)

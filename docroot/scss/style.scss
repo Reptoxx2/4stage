@@ -183,6 +183,8 @@ body
     }
 
     &__row-1 {
+      display: flex;
+      flex-direction: column;
       h3
       {
         font-size: 25px;
@@ -511,11 +513,15 @@ body
   }
   .navigator
   {
+    display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
     align-self: center;
-    display: flex;
     gap: 5px;
+    &__course
+    {
+      display: none;
+    }
     span
     {
       &.active{
@@ -789,6 +795,10 @@ body
       {
         text-align: center;
       }
+    }
+    .navigator__course
+    {
+      display: flex;
     }
   }
 }
